@@ -13,6 +13,7 @@ setup(name='AttentionGatedNetworks',
       install_requires=[
         "numpy",
         "torch",
+        "opencv-python",
         "matplotlib",
         "scipy",
         "torchvision",
@@ -20,13 +21,11 @@ setup(name='AttentionGatedNetworks',
         "visdom",
         "nibabel",
         "scikit-image",
+        "scikit-learn",
         "h5py",
         "pandas",
         "dominate",
-        'torchsample==0.1.3',
-      ],
-      dependency_links=[
-          'https://github.com/ozan-oktay/torchsample/tarball/master#egg=torchsample-0.1.3'
+        'torchsample @ https://github.com/ozan-oktay/torchsample/tarball/master#egg=torchsample-0.1.3',
       ],
       packages=find_packages(exclude=('tests', 'docs'))
 )
