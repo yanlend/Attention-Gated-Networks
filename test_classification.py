@@ -167,7 +167,7 @@ def test(arguments):
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser(description='CNN Seg Training Function')
+    parser = argparse.ArgumentParser(description='CNN Classification Test Function')
 
     parser.add_argument('-c', '--config',  help='training config file', required=True)
     parser.add_argument('-d', '--debug',   help='returns number of parameters and bp/fp runtime', action='store_true')
